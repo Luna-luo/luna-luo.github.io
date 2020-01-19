@@ -6,19 +6,26 @@
     <description>Recent content in Posts on luna的博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-Hans</language>
-    <lastBuildDate>Thu, 16 Jan 2020 12:52:29 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 19 Jan 2020 20:26:11 +0800</lastBuildDate>
     
 	<atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>第二篇博客</title>
-      <link>http://localhost:1313/posts/%E7%AC%AC%E4%BA%8C%E7%AF%87%E5%8D%9A%E5%AE%A2/</link>
-      <pubDate>Thu, 16 Jan 2020 12:52:29 +0800</pubDate>
+      <title>如何用hugo搭建个人博客</title>
+      <link>http://localhost:1313/posts/%E5%A6%82%E4%BD%95%E7%94%A8hugo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</link>
+      <pubDate>Sun, 19 Jan 2020 20:26:11 +0800</pubDate>
       
-      <guid>http://localhost:1313/posts/%E7%AC%AC%E4%BA%8C%E7%AF%87%E5%8D%9A%E5%AE%A2/</guid>
-      <description>#第二篇博客
-来咯~~又见面咯</description>
+      <guid>http://localhost:1313/posts/%E5%A6%82%E4%BD%95%E7%94%A8hugo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</guid>
+      <description>如何用hugo搭建个人博客 Quick Start $ brew hugo #默认你未安装hugo，已安装请忽略 $ hugo new site xxxxx.github.io-generator $ cd xxxxx.github.io-generator $ hugo new posts/文章标题.md 打开md文件，编辑内容后,修改draft，把True改成False $ hugo server -D 执行完上面的基本操作，你应该可以点击查看你的博客了。
+安装Hugo 第一步当然就是要成功安装hugo了，最推荐的方法是&amp;mdash;在命令行用$ brew hugo，brew的安装可以点击这里。
+其实如何用hugo搭建个人博客，Hugo官网有一个很详细的教程，具体链接可以点这里。
+如何上传到github 先运行命令行$hugo,此时系统会自动生成一个Public文件，注意此时我们应该先把这个public文件置于.gitignore里面，为了避免与外部这个generator的.git发生冲突。怎么做呢？ 先在generator文件夹里新建一个.gitignore文件，再在其中输入/public/
+因为此时，我们的目标是将public文件夹上传到github，所以我们此时必须得保证目前位于public目录下。
+即进入public
+$ cd public $ git init $ git add $ git commit -v $ git push -u origin master #如果以前执行过这个操作，可以直接输入git push即可。 这里是GitHub的基本用法，具体的使用方法，可以参考我即将写的git使用方法文章。
+此处值得注意的是，我们在新建仓库时的名字，必须得与hugo这个generator的名字相同，打个比方，我的这个文件夹是luna-luo.github.io-generator，那么我的仓库名就得是luna-luo.github.io。
+成功push后，打开仓库界面的settings，下滑到github pages项目，查看有无publish成功的提示，成功的话就可以直接点开连接啦，个人博客开通成功！yeah~~</description>
     </item>
     
     <item>
